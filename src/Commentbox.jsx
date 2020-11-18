@@ -32,12 +32,12 @@ class Commentbox extends Component {
         const {commentval}=this.props;
         console.log(commentval.name)
         console.log(commentval.length)
-       // {people.filter(person => person.age < 60).map(filteredPerson => (
+      
         const listItemsComments = this.props.commentval.map((info,index) =>
 
         <div className="commentstyle">
-          <p>{index}</p>
-       <p><a href="" target="_blank">{info.name}{info.name.length}</a></p>
+       
+       <p><a href="" target="_blank">{info.name}</a></p>
        <p> {info.comments}</p>
        <Button variant="link" onClick={()=>this.handleLike(index)}>Like({info.likes})</Button>
        <Button variant="link" onClick={()=>this.handleReply(index)}>Reply  </Button>

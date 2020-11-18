@@ -394,12 +394,13 @@ else
                 ) : null}
               </Form.Group>
               <Button
-                type="submit"
+                variant="primary"
                 onClick={(e) => this.togglepopup("submitaprod", e)}
               >
                 Submit
-              </Button>
-              <Button variant="primary">close button</Button>
+              </Button>{' '}
+            
+              <Button variant="primary">close</Button>{' '}
             </Form>
           </Popup>
         ) : null}
@@ -425,19 +426,19 @@ else
                 ) : null}
               </Form.Group>
               <Button
-                type="submit"
+                type="primary"
                 size="sm"
                 onClick={(e) => this.togglepopup("next", e)}
               >
                 Next
-              </Button>
+              </Button>{' '}
               <Button
                 variant="primary"
                 size="sm"
                 onClick={this.handleCloseModal1}
               >
-                close button
-              </Button>
+                close 
+              </Button>{' '}
             </Form>
           </Popup>
         ) : null}
@@ -504,7 +505,7 @@ else
                 onClick={(e) => this.togglepopup("Moreinfo", e)}
               >
                 Submit
-              </Button>
+              </Button>{' '}
             </Form>
           </Popup>
         ) : null}
@@ -516,13 +517,14 @@ else
             handleclose={this.togglepopup}
           >
             <p>{this.state.tagline}</p>
-            <button onClick={(e) => this.togglepopup("commentinfo", e)}>
+            <Button  variant="primary"onClick={(e) => this.togglepopup("commentinfo", e)}>
               <FaComment />
-            </button>
-            <button onClick={this.IncrementItem}>
+            </Button>{''}
+         
+            <Button variant="primary" onClick={this.IncrementItem}>
               <BsCaretUpFill />
               {this.state.counter}
-            </button>
+            </Button>{''}
           </Card>
         ) : null}
       </div>

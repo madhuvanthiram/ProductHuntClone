@@ -5,7 +5,7 @@ class Card extends Component {
     render() { 
         const{header,img,name}=this.props
         return ( 
-<div class="card">
+<div class="cardInfo">
  <p><img src={img} alt="ProductLogo"/></p> 
         <h1>{header}</h1>
         <p><b>{name}</b></p>

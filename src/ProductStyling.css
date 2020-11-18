@@ -112,17 +112,27 @@ input[type=textarea]
   margin-bottom: 16px;
   resize: vertical;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.cardInfo {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 2px 16px;
+  width: 50%;
+  margin:20px;
   cursor: pointer;
-
-width:40%;
-padding: 1px 50px;
-  text-align: center;
   
-  font-family:Arial;
-  font-size: 13px;
-  margin:10px;
+
+}
+.cardInfo:hover {
+  box-shadow: 0 8px 16px 0 rgba(134, 122, 122, 0.2);
+}
+.cardInfo button
+{
+  
+  width:10%;
+  margin:2px;
+
+
+  
+
 }
 img {
  
@@ -135,15 +145,57 @@ img {
   font-size: 18px;
 }
 
-button {
-  border: none;
-  outline: 0;
+@media screen and (max-width: 992px) {
+  .cardInfo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   
-  display: inline-block;
-  padding: 0.5px;
-  color: white;
-  background-color:lightseagreen;
-  text-align: center;
-  cursor: pointer;
+    padding: 2px 16px;
+    width: 50%;
+    margin:5px;
+    cursor: pointer;
+    
+  
+  }
+  .cardInfo button
+{
+  
+  width:20%;
+  margin:2px;
+  
+
+
+  
+
 }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .cardInfo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+    padding: 2px 16px;
+    width: 100%;
+    margin:5px;
+    cursor: pointer;
+    
+  
+  }
+  .cardInfo button
+{
+  
+  width:fit-content;
+  margin:2px;
+
+
+  
+
+}
+
+
+
+  
+}
+
+
 
